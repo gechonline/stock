@@ -28,7 +28,7 @@ function render(){
   <label>Username</label><input id="lu" autocomplete="username"><div style="height:10px"></div>
   <label>Password</label><input id="lp" type="password" autocomplete="current-password"><div style="height:14px"></div>
   <button id="lgo" style="width:100%">Sign in</button><div class="msg err">${esc(msg.t)}</div>
-  <div class="hint">Demo accounts: admin / admin123 (manages stock), cashier / 1234 (sells and views balance).</div></div>`;
+ </div></div>`;
   $("#lgo").onclick=login;$("#lp").onkeydown=e=>{if(e.key==="Enter")login()};return}
   const admin=session.role==="admin";
   const totalRev=sales.reduce((a,s)=>a+s.total,0);
